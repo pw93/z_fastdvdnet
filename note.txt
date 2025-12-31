@@ -1,0 +1,20 @@
+intro:
+Modified from the GitHub repository; some parts of the code cannot be run due to version compatibility issues.
+https://github.com/m-tassano/fastdvdnet?tab=readme-ov-file 
+
+dataset:
+Davis 2017 train and test. Refer official fastdvdnet github to get more info.
+
+train:
+train_fastdvdnet.py \
+	--trainset_dir DAVIS-train-mp4/mp4 \
+	--valset_dir DAVIS-2017-test-dev-480p/DAVIS/JPEGImages/480p \
+	--log_dir logs
+	
+test:
+test_fastdvdnet.py \
+	--test_path <path_to_input_sequence> \
+	--noise_sigma 30 \
+	--save_path results	
+
+
